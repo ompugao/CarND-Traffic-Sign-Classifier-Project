@@ -57,7 +57,7 @@ here is the summary statistics of the traffic signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
 
-![sample_input][materials/sampel_input.jpg]
+![sample_input](materials/sampel_input.jpg)
 
 ### Design and Test a Model Architecture
 
@@ -69,7 +69,7 @@ As a second step, I normalized the image data.
 I got a better result by `X - np.mean(X)` rather than `(X - np.mean(X))/256` somehow (probably because the differentiation becomes small?).
 
 As a third step, when I looked through the input data, I found images which do not have a flat brightness.
-![00001_00029.ppm]('materials/00001_00029.ppm')
+![00001_00029.ppm](materials/00001_00029.ppm)
 So, I modified the model to use local response normalization technique to normalize the brightness/contrast of images.
 This change also brought me a better result.
 
@@ -138,11 +138,11 @@ If an iterative approach was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![20kmph][test_images/20kmph.jpg] 
-![children_crossing][test_images/children_crossing.jpg] 
-![no_entry][test_images/no_entry.jpg] 
-![right_turn [test_images/right_turn.jpg] 
-![stop][test_images/stop.jpg] 
+![20kmph](test_images/20kmph.jpg) 
+![children_crossing](test_images/children_crossing.jpg) 
+![no_entry](test_images/no_entry.jpg) 
+![right_turn](test_images/right_turn.jpg) 
+![stop](test_images/stop.jpg) 
 
 borrowed from https://github.com/netaz/carnd_traffic_sign_classifier, originally from http://electronicimaging.spiedigitallibrary.org/data/journals/electim/927109/jei_22_4_041105_f010.png
 
