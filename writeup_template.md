@@ -144,6 +144,12 @@ Here are five German traffic signs that I found on the web:
 ![right_turn](https://raw.githubusercontent.com/ompugao/CarND-Traffic-Sign-Classifier-Project/master/test_images/right_turn.jpg) 
 ![stop](https://raw.githubusercontent.com/ompugao/CarND-Traffic-Sign-Classifier-Project/master/test_images/stop.jpg) 
 
+- the first image(20kmph) is cropped at the edges and we cannot see the red circle clearly, which might lead to misclassification.
+- the second image(children crossing) should not be difficult because the image is very clear.
+- the third image(no entry) should not be difficult because the horizontal line is clear even though is also cropped at the edges.
+- the fourth image(turn right) should not be difficult either the arrow is clearly seen.
+- the fifth image(stop) might be difficult because the brightness is not flat among each pixel (upperright is a little bit brighter).
+
 borrowed from https://github.com/netaz/carnd_traffic_sign_classifier, originally from http://electronicimaging.spiedigitallibrary.org/data/journals/electim/927109/jei_22_4_041105_f010.png
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
